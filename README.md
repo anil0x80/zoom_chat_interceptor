@@ -18,4 +18,4 @@ As you can see, I have implemented this by hooking the UI function. A more stabl
 Beeps using WinApi's Beep function. This also automatically unmutes Zoom if it is muted, since this DLL is also injected to zoom, zoom needs to be unmuted for the alarm to work.
 
 # Warning
-There is a possibility of the signature of the "magic" function changing between zoom versions. The method has been working stable for months, but that does not guarantee it will work.
+There is a possibility of the signature of the "magic" function changing between zoom versions. The method has been working stable for months, but that does not guarantee it will work forever.
