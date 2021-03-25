@@ -6,7 +6,7 @@ Compile as win32 DLL, inject the DLL into zoom.exe. (Keep in mind zoom.exe has 2
 
 
 # How does it work?
-There is a function which gets called for every incoming message in "zVideoUI.dll", signature: "55 8B EC 56 57 8B F9 FF 15 ? ? ? ? 85 C0 74 3A"
+There is a callback function which is called for every incoming message. The function is in "zVideoUI.dll", signature: "55 8B EC 56 57 8B F9 FF 15 ? ? ? ? 85 C0 74 3A"
 
 By hooking this, we can search incoming messages, and we can check if a specific person has sent a message by setting search text as his/her name.
 
